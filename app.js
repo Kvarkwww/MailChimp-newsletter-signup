@@ -34,11 +34,11 @@ app.post("/", function(req, res){
 
     const jsonData = JSON.stringify(data);
 
-    const url = "https://us3.api.mailchimp.com/3.0/lists/989ced3dc2"
+    const url = "https://us3.api.mailchimp.com/3.0/lists/XXXXXXXXXX"
 
     const options = {
          method: "POST",
-         auth: "kvark:efd13ede5088fa8ad0aa51f3ff5088a2-us3"
+         auth: "kvark:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
     }
 
     const request = https.request(url, options, function(response) {
@@ -60,9 +60,3 @@ app.post("/", function(req, res){
 app.listen(process.env.PORT || 3000, function() {
     console.log("Server running, better catch it");
 }) 
-
-
-
-// MC ApiKey
-// listid 989ced3dc2
-// efd13ede5088fa8ad0aa51f3ff5088a2-us3
